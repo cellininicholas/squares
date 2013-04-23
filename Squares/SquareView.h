@@ -22,6 +22,7 @@ typedef enum EdgeType {
     Byte edgeFlags;
     ColourType colType;
     
+    CGRect baseInnerRect;
     UIView *innerColourView;
     
 }
@@ -50,7 +51,7 @@ typedef enum EdgeType {
  Set all edges to IN
  */
 -(void)clearAllEdges;
-
+-(void)toggleAllEdges;
 
 
 /*******************

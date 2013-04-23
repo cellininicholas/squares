@@ -39,9 +39,13 @@ static const CGFloat edgeSize = 2;
     edgeFlags = EdgeNone;
 }
 
+-(void)toggleAllEdges {
+    edgeFlags = ~edgeFlags;
+}
+
 // Should be called from animation blocks
 -(void)setThePreparedInnerRect {
-    CGRect tmpRect = CGRectOffset(self.frame, -edgeSize, -edgeSize);
+    CGRect tmpRect = baseInnerRect;
     if (edgeFlags != EdgeNone) {
         if ((edgeFlags & EdgeTopOut) == EdgeTopOut) {
             tmpRect.origin.y -= edgeSize;
@@ -68,7 +72,7 @@ static const CGFloat edgeSize = 2;
  ******************/
 -(void)setColourType:(ColourType)col {
     colType = col;
-    [self setBackgroundColor:[StaticUtils colorWithColourType:colType]];
+    [innerColourView setBackgroundColor:[StaticUtils colorWithColourType:colType]];
 }
 
 
@@ -80,8 +84,12 @@ static const CGFloat edgeSize = 2;
     if (self) {
         // Initialization code
         edgeFlags = EdgeNone;
-        innerColourView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+        baseInnerRect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+        baseInnerRect = CGRectInset(baseInnerRect, edgeSize, edgeSize);
+        innerColourView = [[UIView alloc] initWithFrame:baseInnerRect];
         [self addSubview:innerColourView];
+        
+        [self setBackgroundColor:[UIColor blackColor]];
     }
     return self;
 }

@@ -16,8 +16,8 @@
 		6846AFAA1726A62A00959BBF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6846AFA91726A62A00959BBF /* Default.png */; };
 		6846AFAC1726A62A00959BBF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6846AFAB1726A62A00959BBF /* Default@2x.png */; };
 		6846AFAE1726A62A00959BBF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6846AFAD1726A62A00959BBF /* Default-568h@2x.png */; };
-		6846AFB11726A62A00959BBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846AFB01726A62A00959BBF /* ViewController.m */; };
-		6846AFB41726A62A00959BBF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6846AFB21726A62A00959BBF /* ViewController.xib */; };
+		6846AFB11726A62A00959BBF /* GameLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846AFB01726A62A00959BBF /* GameLevelViewController.m */; };
+		6846AFB41726A62A00959BBF /* GameLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6846AFB21726A62A00959BBF /* GameLevelViewController.xib */; };
 		6846AFBC1726AE0A00959BBF /* StaticUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846AFBB1726AE0A00959BBF /* StaticUtils.m */; };
 		6846AFBF1726AF9E00959BBF /* SquareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6846AFBE1726AF9E00959BBF /* SquareView.m */; };
 /* End PBXBuildFile section */
@@ -36,9 +36,9 @@
 		6846AFA91726A62A00959BBF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6846AFAB1726A62A00959BBF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6846AFAD1726A62A00959BBF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6846AFAF1726A62A00959BBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6846AFB01726A62A00959BBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6846AFB31726A62A00959BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6846AFAF1726A62A00959BBF /* GameLevelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLevelViewController.h; sourceTree = "<group>"; };
+		6846AFB01726A62A00959BBF /* GameLevelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLevelViewController.m; sourceTree = "<group>"; };
+		6846AFB31726A62A00959BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameLevelViewController.xib; sourceTree = "<group>"; };
 		6846AFBA1726AE0A00959BBF /* StaticUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticUtils.h; sourceTree = "<group>"; };
 		6846AFBB1726AE0A00959BBF /* StaticUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticUtils.m; sourceTree = "<group>"; };
 		6846AFBD1726AF9E00959BBF /* SquareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareView.h; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 			children = (
 				6846AFA61726A62A00959BBF /* AppDelegate.h */,
 				6846AFA71726A62A00959BBF /* AppDelegate.m */,
-				6846AFAF1726A62A00959BBF /* ViewController.h */,
-				6846AFB01726A62A00959BBF /* ViewController.m */,
-				6846AFB21726A62A00959BBF /* ViewController.xib */,
+				6846AFAF1726A62A00959BBF /* GameLevelViewController.h */,
+				6846AFB01726A62A00959BBF /* GameLevelViewController.m */,
+				6846AFB21726A62A00959BBF /* GameLevelViewController.xib */,
 				6846AFBD1726AF9E00959BBF /* SquareView.h */,
 				6846AFBE1726AF9E00959BBF /* SquareView.m */,
 				6846AFBA1726AE0A00959BBF /* StaticUtils.h */,
@@ -172,7 +172,7 @@
 				6846AFAA1726A62A00959BBF /* Default.png in Resources */,
 				6846AFAC1726A62A00959BBF /* Default@2x.png in Resources */,
 				6846AFAE1726A62A00959BBF /* Default-568h@2x.png in Resources */,
-				6846AFB41726A62A00959BBF /* ViewController.xib in Resources */,
+				6846AFB41726A62A00959BBF /* GameLevelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +185,7 @@
 			files = (
 				6846AFA41726A62A00959BBF /* main.m in Sources */,
 				6846AFA81726A62A00959BBF /* AppDelegate.m in Sources */,
-				6846AFB11726A62A00959BBF /* ViewController.m in Sources */,
+				6846AFB11726A62A00959BBF /* GameLevelViewController.m in Sources */,
 				6846AFBC1726AE0A00959BBF /* StaticUtils.m in Sources */,
 				6846AFBF1726AF9E00959BBF /* SquareView.m in Sources */,
 			);
@@ -202,12 +202,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6846AFB21726A62A00959BBF /* ViewController.xib */ = {
+		6846AFB21726A62A00959BBF /* GameLevelViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6846AFB31726A62A00959BBF /* en */,
 			);
-			name = ViewController.xib;
+			name = GameLevelViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

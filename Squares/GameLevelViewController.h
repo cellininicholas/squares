@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface GameLevelViewController : UIViewController {
+    IBOutlet UIView *gameView;
+    
+    BOOL square2DArray[5][5];
+    NSMutableArray *squareArray;
+    
+    
+}
 
 @end
